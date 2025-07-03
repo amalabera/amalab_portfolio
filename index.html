@@ -2,114 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amala Bera | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
-<body>
-
-  <header>
-    <h1>Amala Bera</h1>
-    <p>Business Data Analyst | Python | AI Projects</p>
-    <a href="Amala_Bera_Resume.pdf" download>📄 Download Resume</a>
+<body class="dark">
+  <header class="navbar">
+    <h1>Amala <span>Bera</span></h1>
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <section id="about" data-aos="fade-up">
-      <h2>About Me</h2>
-      <p>I’m a data analyst with 4+ years of experience at Accenture. I build AI tools, dashboards, and pipelines. Passionate about data storytelling and automation.</p>
-    </section>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <img src="amala_hero.png" alt="Amala Hero" />
+    <div class="hero-text" data-aos="fade-up">
+      <h2>Hello<br />I'm <span>Amala Bera</span><br />Business Data Analyst</h2>
+      <div class="buttons">
+        <a href="mailto:beraamala43@gmail.com" class="btn">Say Hii →</a>
+        <a href="resume.pdf" download class="btn-outline">Resume ⬇</a>
+      </div>
+    </div>
+  </section>
 
-    <section id="projects" data-aos="fade-up">
-      <h2>Projects</h2>
-
-      <div class="project" data-aos="zoom-in">
-        <img src="https://via.placeholder.com/400x200?text=Student+Marks+Predictor" alt="Student Marks Predictor">
-        <h3>Student Marks Predictor</h3>
-        <p>Built a regression model to predict academic scores based on study hours.</p>
-        <a href="https://marks-predictor.streamlit.app" target="_blank">Live Demo</a>
-        <a href="https://github.com/amalabera/student-marks-predictor" target="_blank">GitHub</a>
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project" data-aos="fade-up">
+        <div class="project-text">
+          <h3>Student Marks Predictor</h3>
+          <p>Predicts student performance using regression models and CSV upload. Visualizes metrics and model results.</p>
+          <a href="https://marks-predictor.streamlit.app" target="_blank" class="btn">Live Demo</a>
+          <a href="https://github.com/amalabera/student-marks-predictor" target="_blank" class="btn-outline">View Code</a>
+        </div>
+        <img src="projects/student-predictor.png" alt="Student Marks Predictor" />
       </div>
 
-      <div class="project" data-aos="zoom-in">
-        <img src="https://via.placeholder.com/400x200?text=Executive+KPI+Dashboard" alt="Executive KPI Dashboard">
-        <h3>Executive KPI Dashboard</h3>
-        <p>Interactive dashboard to visualize KPIs using MySQL and Streamlit.</p>
-        <a href="https://github.com/amalabera/executive-kpi-dashboard" target="_blank">GitHub</a>
+      <div class="project" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-text">
+          <h3>Executive KPI Dashboard</h3>
+          <p>Streamlit dashboard with MySQL and Excel data sources to automate KPI reporting and visual insights.</p>
+          <a href="https://exec-dashboard.streamlit.app" target="_blank" class="btn">Live Demo</a>
+          <a href="https://github.com/amalabera/executive-kpi-dashboard" target="_blank" class="btn-outline">View Code</a>
+        </div>
+        <img src="projects/executive-kpi.png" alt="Executive KPI Dashboard" />
       </div>
-    </section>
 
-    <section id="contact" data-aos="fade-up">
-      <h2>Contact</h2>
-      <form id="contactForm" action="https://formspree.io/f/movwlblw" method="POST">
-        <label for="name">Name:</label><br>
-        <input type="text" name="name" required><br>
+      <div class="project" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-text">
+          <h3>Amala Food Blog</h3>
+          <p>A stylish responsive food blog featuring recipe cards and a clean layout built with HTML, CSS, and JS.</p>
+          <a href="https://amalafoodblog.ccbp.tech" target="_blank" class="btn">Live Demo</a>
+          <a href="https://github.com/amalabera/amalafoodblog" target="_blank" class="btn-outline">View Code</a>
+        </div>
+        <img src="projects/foodblog.png" alt="Amala Food Blog" />
+      </div>
+    </div>
+  </section>
 
-        <label for="email">Email:</label><br>
-        <input type="email" name="email" required><br>
-
-        <label for="message">Message:</label><br>
-        <textarea name="message" rows="5" required></textarea><br>
-
-        <button type="submit">Send</button>
-        <p id="formMessage" style="display:none; color: green; font-weight: bold; margin-top: 10px;">
-          ✅ Message sent successfully!
-        </p>
-      </form>
-    </section>
-  </main>
+  <!-- Contact -->
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h3>Contact Me</h3>
+    <p>Email me directly at <a href="mailto:beraamala04@gmail.com">beraamala04@gmail.com</a> or use the form below:</p>
+    <form action="https://formspree.io/f/movwlblw" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message →</button>
+    </form>
+  </section>
 
   <footer>
-    <p>© 2025 Amala Bera</p>
+    © 2025 Amala Bera – Built with HTML, CSS, and AOS.js
   </footer>
 
-  <!-- Floating Social Buttons -->
-  <div class="social-floating">
-    <a href="https://github.com/amalabera" target="_blank" class="social github" title="GitHub">🐱</a>
-    <a href="https://linkedin.com/in/amalabera" target="_blank" class="social linkedin" title="LinkedIn">🔗</a>
-  </div>
-
-  <!-- Scroll To Top Button -->
-  <button id="scrollToTopBtn" title="Go to top">⬆️</button>
-
-  <!-- AOS & Scroll/Contact Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
-
-    // Scroll-to-top
-    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-    window.addEventListener("scroll", () => {
-      scrollToTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
-    });
-    scrollToTopBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-
-    // Contact Form
-    const form = document.getElementById("contactForm");
-    const message = document.getElementById("formMessage");
-
-    form.addEventListener("submit", async function (e) {
-      e.preventDefault();
-      const formData = new FormData(form);
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (response.ok) {
-        message.style.display = "block";
-        message.style.color = "green";
-        form.reset();
-      } else {
-        message.textContent = "❌ Failed to send. Please try again.";
-        message.style.color = "red";
-        message.style.display = "block";
-      }
-    });
   </script>
 </body>
 </html>
