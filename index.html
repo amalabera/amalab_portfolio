@@ -4,24 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amala Bera | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
-<body class="dark">
+<body>
+
+  <!-- Navigation -->
   <header class="navbar">
     <h1>Amala <span>Bera</span></h1>
     <nav>
-      <a href="#home" class="active">Home</a>
+      <a href="#home">Home</a>
       <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section id="home" class="hero">
-    <img src="amala_hero.png" alt="Amala Hero" />
+    <img src="images/experience/amala-photo.png" alt="Amala" />
     <div class="hero-text" data-aos="fade-up">
       <h2>Hello<br />I'm <span>Amala Bera</span><br />Business Data Analyst</h2>
       <div class="buttons">
@@ -32,38 +35,78 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="projects">
+  <section id="projects" class="projects" data-aos="fade-up">
     <h2>Projects</h2>
     <div class="project-list">
-      <div class="project" data-aos="fade-up">
+      <div class="project">
         <div class="project-text">
           <h3>Student Marks Predictor</h3>
           <p>Predicts student performance using regression models and CSV upload. Visualizes metrics and model results.</p>
           <a href="https://marks-predictor.streamlit.app" target="_blank" class="btn">Live Demo</a>
           <a href="https://github.com/amalabera/student-marks-predictor" target="_blank" class="btn-outline">View Code</a>
         </div>
-        <img src="projects/student-predictor.png" alt="Student Marks Predictor" />
+        <img src="images/projects/student-marks.png" alt="Student Marks Predictor" />
       </div>
 
-      <div class="project" data-aos="fade-up" data-aos-delay="100">
+      <div class="project">
         <div class="project-text">
           <h3>Executive KPI Dashboard</h3>
           <p>Streamlit dashboard with MySQL and Excel data sources to automate KPI reporting and visual insights.</p>
           <a href="https://exec-dashboard.streamlit.app" target="_blank" class="btn">Live Demo</a>
           <a href="https://github.com/amalabera/executive-kpi-dashboard" target="_blank" class="btn-outline">View Code</a>
         </div>
-        <img src="projects/executive-kpi.png" alt="Executive KPI Dashboard" />
+        <img src="images/projects/executive-kpi.png" alt="Executive KPI Dashboard" />
       </div>
 
-      <div class="project" data-aos="fade-up" data-aos-delay="200">
+      <div class="project">
         <div class="project-text">
           <h3>Amala Food Blog</h3>
           <p>A stylish responsive food blog featuring recipe cards and a clean layout built with HTML, CSS, and JS.</p>
           <a href="https://amalafoodblog.ccbp.tech" target="_blank" class="btn">Live Demo</a>
           <a href="https://github.com/amalabera/amalafoodblog" target="_blank" class="btn-outline">View Code</a>
         </div>
-        <img src="projects/foodblog.png" alt="Amala Food Blog" />
+        <img src="images/projects/foodblog.png" alt="Food Blog" />
       </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="experience" data-aos="fade-up">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="job">
+        <h3>Business Data Analyst <span>— Accenture</span></h3>
+        <img src="images/experience/accenture-logo.png" alt="Accenture" class="company-logo" />
+        <p class="duration">Nov 2021 – Dec 2023</p>
+        <ul>
+          <li>Analyzed and visualized business data to support decision-making.</li>
+          <li>Created automated dashboards using SQL, Python, and Tableau.</li>
+          <li>Collaborated with stakeholders to deliver insights on performance.</li>
+          <li>Led QA reviews and data validation efforts for new tools.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Quality Analyst <span>— Accenture</span></h3>
+        <p class="duration">Mar 2021 – Nov 2021</p>
+        <ul>
+          <li>Conducted manual and automated testing of mobile applications.</li>
+          <li>Improved product release cycles by reducing testing time 20%.</li>
+          <li>Created test cases and reported bugs using JIRA and Excel.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item"><img src="images/skills/python.png" alt="Python" /><span>Python</span></div>
+      <div class="skill-item"><img src="images/skills/mysql.png" alt="MySQL" /><span>MySQL</span></div>
+      <div class="skill-item"><img src="images/skills/github.png" alt="GitHub" /><span>GitHub</span></div>
+      <div class="skill-item"><img src="images/skills/pandas.png" alt="Pandas" /><span>Pandas</span></div>
+      <div class="skill-item"><img src="images/skills/tableau.png" alt="Tableau" /><span>Tableau</span></div>
+      <div class="skill-item"><img src="images/skills/linkedin.png" alt="LinkedIn" /><span>LinkedIn</span></div>
     </div>
   </section>
 
@@ -79,12 +122,24 @@
     </form>
   </section>
 
+  <!-- Footer -->
   <footer>
-    © 2025 Amala Bera – Built with HTML, CSS, and AOS.js
+    © 2025 Amala Bera — Built with HTML, CSS, AOS.js
   </footer>
 
-  <script>
-    AOS.init();
-  </script>
+  <!-- Floating Social Links -->
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/amalabera" target="_blank">
+      <img src="images/skills/linkedin.png" alt="LinkedIn" />
+    </a>
+    <a href="https://github.com/amalabera" target="_blank">
+      <img src="images/skills/github.png" alt="GitHub" />
+    </a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
 </body>
 </html>
