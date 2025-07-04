@@ -2,64 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amala Bera | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Hero Section -->
   <header class="hero">
-    <div class="hero-content">
-      <h1>Amala Bera</h1>
-      <p>Business Data Analyst</p>
-      <div class="buttons">
-        <a href="mailto:beraamla43@gmail.com" class="btn">Say Hii →</a>
-        <a href="resume.pdf" download class="btn">Resume ⬇</a>
-      </div>
-      <div class="socials">
-        <a href="https://linkedin.com/in/amalabera" target="_blank">
-          <img src="skills/linkedin.png" alt="LinkedIn" />
-        </a>
-        <a href="https://github.com/amalabera" target="_blank">
-          <img src="skills/github.png" alt="GitHub" />
-        </a>
-      </div>
+    <h1>Amala Bera</h1>
+    <p>Business Data Analyst</p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn sayhi">Say Hi 👋</a>
+      <a href="resume.pdf" download class="btn resume">Resume ⬇️</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://github.com/amalabera" target="_blank">
+        <img src="images/skills/github.png" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/amalabera" target="_blank">
+        <img src="images/skills/linkedin.png" alt="LinkedIn" />
+      </a>
     </div>
   </header>
 
-  <!-- Experience Section -->
-  <section id="experience">
+  <section class="experience">
     <h2>Experience</h2>
     <div class="experience-card">
-      <img src="experience/accenture-logo.png" alt="Accenture Logo" />
-      <div>
+      <img src="images/experience/accenture-logo.png" alt="Accenture Logo" />
+      <div class="exp-text">
         <h3>Quality Analyst</h3>
         <p class="company">Accenture</p>
         <p class="duration">Jan 2021 – Present</p>
-        <ul>
-          <li>Conducted audits and quality testing for mobile and web applications.</li>
-          <li>Reduced testing cycle by 20% by streamlining manual QA processes.</li>
-          <li>Managed issue tracking via JIRA and collaborated with development teams.</li>
-        </ul>
+        <p>Conducted audits and quality assessments of IT systems.</p>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
+  <section class="skills">
     <h2>My Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card"><img src="skills/excel.png" alt="HTML"><p>EXCEL</p></div>
-      <div class="skill-card"><img src="skills/sklearn.png" alt="CSS"><p>Sklearn</p></div>
-      <div class="skill-card"><img src="skills/github.png" alt="Github"><p>JavaScript</p></div>
-      <div class="skill-card"><img src="skills/powerbi.png" alt="PowerBi"><p>TypeScript</p></div>
-      <div class="skill-card"><img src="skills/tableau.png" alt="React"><p>React JS</p></div>
-     
+    <div class="skill-grid">
+      <div class="skill-item">
+        <img src="images/skills/excel.png" alt="Excel" />
+        <p>Excel</p>
+      </div>
+      <div class="skill-item">
+        <img src="images/skills/github.png" alt="Git" />
+        <p>Git</p>
+      </div>
+      <div class="skill-item">
+        <img src="images/skills/powerbi.png" alt="Power BI" />
+        <p>Power BI</p>
+      </div>
+      <div class="skill-item">
+        <img src="images/skills/tableau.png" alt="Tableau" />
+        <p>Tableau</p>
+      </div>
+      <div class="skill-item">
+        <img src="images/skills/sklearn.png" alt="Scikit-learn" />
+        <p>Scikit-learn</p>
+      </div>
+      <div class="skill-item">
+        <img src="images/skills/seaborn.png" alt="Seaborn" />
+        <p>Seaborn</p>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 Amala Bera. All rights reserved.</p>
+  <footer id="contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/movwlblw" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </footer>
 </body>
 </html>
