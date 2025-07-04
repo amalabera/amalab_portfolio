@@ -6,8 +6,8 @@ body {
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
 .navbar {
@@ -44,10 +44,10 @@ a {
 }
 
 .hero img {
-  width: 200px;
-  border: 2px solid #a3e635;
+  width: 180px;
   border-radius: 50%;
-  margin-bottom: 2rem;
+  border: 2px solid #a3e635;
+  margin-bottom: 1rem;
 }
 
 .hero-text h2 span {
@@ -102,14 +102,10 @@ a {
   border: 1px solid #a3e635;
   border-radius: 1rem;
   padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .project img {
-  width: 100%;
-  max-width: 500px;
+  max-width: 100%;
   border-radius: 1rem;
   margin-top: 1rem;
 }
@@ -119,12 +115,12 @@ a {
 }
 
 .timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
   max-width: 800px;
   margin: auto;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .job h3 {
@@ -143,15 +139,14 @@ a {
 }
 
 .duration {
-  font-size: 0.9rem;
   color: #888;
-  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .job ul {
-  list-style: disc;
   margin-left: 1.5rem;
   color: #ddd;
+  list-style: disc;
 }
 
 .skills-grid {
@@ -169,7 +164,6 @@ a {
   border: 1px solid #a3e635;
   padding: 0.6rem 1.2rem;
   border-radius: 999px;
-  font-weight: 600;
   color: #a3e635;
   transition: 0.3s;
 }
@@ -246,3 +240,4 @@ footer {
   transform: scale(1.15);
   box-shadow: 0 0 12px #a3e635aa;
 }
+
